@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Posts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="post-form">
+            <h1>Criar Novo Post</h1>
+            <form id="post-form">
+                <div class="form-group">
+                    <label for="titulo">Título:</label>
+                    <input 
+                        type="text" 
+                        id="titulo" 
+                        name="titulo" 
+                        required 
+                        placeholder="Digite o título do post"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="conteudo">Conteúdo:</label>
+                    <textarea 
+                        id="conteudo" 
+                        name="conteudo" 
+                        required 
+                        placeholder="Digite o conteúdo do post"
+                    ></textarea>
+                </div>
+                <button type="submit" id="submit-btn">Publicar Post</button>
+            </form>
+        </section>
+
+        <section class="post-preview">
+            <h2>Post Publicado</h2>
+            <article class="post-card">
+                <h2 id="renderizador-titulo"></h2>
+                <p id="renderizador-conteudo"></p>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
